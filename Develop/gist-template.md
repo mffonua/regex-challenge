@@ -24,13 +24,10 @@ This Regex will allow us to find any hex code.
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
-- [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [In Conclusion](#In-Conclusion)
+
+
 
 ## Regex Components
 ### Anchors
@@ -46,23 +43,21 @@ Ex. `\th3?r` would match both "their" and "there".
 The other quantifier that is used in our regex is `{x}`, it is used 2 times ( `{6}` and `{3}` ). This matches exactly the preceding character x-amount-of-times. <br>
 Ex. `{\d{7}}` this regex will match any string that has 7 consecutive numbers like `1234567` or `8410411`.
 ### OR Operator
-
+ Our regex has one big group `([a-f0-9]{6}|[a-f0-9]{3})` which is divided by an OR Operator `|`. Which means that in our group we have 2 expressions, `([a-f0-9]{6}` and 
+ `[a-f0-9]{3})`. This means that our regex will match any of the two expressions. <br>
+Ex. an OR operator using to validate zip codes, `(801|104|102)` will match those "801","104" or "102" as part of a zip code.
 ### Character Classes
+In our regex we have one character class that is repeated twice: `[a-f0-9]`. A character class matches any character enclosed in brackets. For example: `[abc]` will match "a" or "b" or "c". `[-.]` will match "-" or ".". 
 
-### Flags
+Inside our character class we have two ranges: `a-f` and `0-9`. This means that it maches any character "a" through "f" (lowercase, it won't match uppercase), and "0" through "9".  Other examples: `[m-p]` matches "m", "n", "o" or "p". `[3-5]` matches "3", "4" or "5".
 
 ### Grouping and Capturing
+This Regex ExExpression has one group, and it is used in combination with the OR Operator (as listed above).
 
-### Bracket Expressions
+### In Conclusion
+After analyzing every part of our regex `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`, we could describe its matching patern like this:
 
-### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
-
+"Every sequence of characters that starts with # or not, followed by 6 charcaters "a" through "f" and "0" through "9", OR followed by 3 charcaters "a" through "f" and "0" through "9"."
 ## Author
 
 Hello, My name is Miles Fonua, I am a full stack developer student looking to learn and grow. I want to focus more on front end development (as I find it more visually appealing) however I will still work on back-end dev. work as well. If you have any questions or suggestions please reach out to me via [LinkedIn](https://www.linkedin.com/in/miles-fonua-24b791237/) or Email @ <a href="mailto:myles.fonua@gmail.com">myles.fonua@gmail.com</a>.
