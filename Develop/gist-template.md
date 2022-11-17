@@ -1,6 +1,13 @@
-# Title (replace with your title)
+# Regex Matching a Hex Value
+Regular Expressions (Regex) are a sequence of characters that specifies a search pattern in text.
+The Hexadeximal (Hex) is a postional numeral system that uses 16 distinct symbols. 
 
-Introductory paragraph (replace this with your text)
+One of the uses of the Hex system are the hex color codes (a hexadecimal representation of a color in RGB format.)
+Examples of the Hex Color Codes are : <br>
+`#4169e1`
+`#6d6771`
+`#FFFDD0` 
+
 
 ## Summary
 
