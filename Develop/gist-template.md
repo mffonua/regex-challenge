@@ -1,4 +1,4 @@
-# Regex Matching a Hex Value
+# Regex Matching A Hex Value
 Regular Expressions (Regex) are a sequence of characters that specifies a search pattern in text.
 The Hexadeximal (Hex) is a postional numeral system that uses 16 distinct symbols. 
 
@@ -34,6 +34,10 @@ This Regex will allow us to find any hex code.
 
 ## Regex Components
 ### Anchors
+The anchors for this string are `^` and `$`.
+
+The `^` meta character represents the beginning of the string and the `$` represents the end of the string. 
+For example, `^xyz` wont match any string that begins with xyz, and `abc$` wont match any string that ends with abc. Our regex uses `^` and `$` to make sure that we are matching the full expression `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/` from the beginning to the end.
 
 ### Quantifiers
 
