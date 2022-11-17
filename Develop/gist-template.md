@@ -11,7 +11,12 @@ Examples of the Hex Color Codes are : <br>
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+We are going to analyze a Regular Expression or [Regex](https://en.wikipedia.org/wiki/Regular_expression) that matches any hexadecimal code in a string of characters. <br>
+The regex that we are going to analyze today is: <br>
+`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
+
+This Regex will allow us to find any hex code.
+
 
 ## Table of Contents
 
@@ -28,7 +33,6 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
-
 ### Anchors
 
 ### Quantifiers
