@@ -40,7 +40,11 @@ The `^` meta character represents the beginning of the string and the `$` repres
 For example, `^xyz` wont match any string that begins with xyz, and `abc$` wont match any string that ends with abc. Our regex uses `^` and `$` to make sure that we are matching the full expression `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/` from the beginning to the end.
 
 ### Quantifiers
-
+This regex uses 2 types of quantifiers `?` and `{x}`.
+`?` matches any proceeding character 0 or 1 time. This makes the `?` a conditional inside regex. Since `#` is preceeded before the `?`, our expression will match a string that either begins with a `#` or not. <br>
+Ex. `\th3?r` would match both "their" and "there".
+The other quantifier that is used in our regex is `{x}`, it is used 2 times ( `{6}` and `{3}` ). This matches exactly the preceding character x-amount-of-times. <br>
+Ex. `{\d{7}}` this regex will match any string that has 7 consecutive numbers like `1234567` or `8410411`.
 ### OR Operator
 
 ### Character Classes
