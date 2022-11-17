@@ -46,4 +46,6 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Hello, My name is Miles Fonua, I am a full stack developer student looking to learn and grow. I want to focus more on front end development (as I find it more visually appealing) however I will still work on back-end dev. work as well. If you have any questions or suggestions please reach out to me via [LinkedIn](https://www.linkedin.com/in/miles-fonua-24b791237/) or Email @ <a href="mailto:myles.fonua@gmail.com">myles.fonua@gmail.com</a>.
+
+GitHub: [mffonua](https://github.com/mffonua)
